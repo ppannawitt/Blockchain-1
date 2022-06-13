@@ -1,0 +1,21 @@
+address="56fb34164bcf46f829f80ca82b78a7bdac025e4c"
+inverseaddress=address[::-1]
+modifiedaddress=0
+for counter in range(len(inverseaddress)):
+    x=inverseaddress[counter]
+    if x=="a":
+        x=10
+    elif x=="b":
+        x=11
+    elif x=="c":
+        x=12
+    elif x=="d":
+        x=13
+    elif x=="e":
+        x=14
+    elif x=="f":
+        x=15
+    else:
+        x=int(x)
+    modifiedaddress+=x*(16**counter)
+print(modifiedaddress)
