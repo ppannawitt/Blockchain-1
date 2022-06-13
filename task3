@@ -1,0 +1,5 @@
+address="496575230761530253849878377131976115264564649548"
+addresssum=0
+for num in address:
+    addresssum+=int(num)
+print(addresssum)
